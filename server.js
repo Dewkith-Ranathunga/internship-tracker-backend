@@ -4,10 +4,14 @@ import express from "express";
 import connectDB from "./config/db.js";
 import internshipRoutes from "./routes/internshipRoutes.js";
 import userRouter from "./routes/userRouter.js";
+import startCronJobs from "./utils/cronJobs.js";
 
 dotenv.config();
 
 connectDB();
+
+// after DB connection
+startCronJobs();
 
 const app = express();
 
