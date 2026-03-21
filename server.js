@@ -2,6 +2,7 @@ import cors from "cors";
 import dotenv from "dotenv";
 import express from "express";
 import connectDB from "./config/db.js";
+import internshipRoutes from "./routes/internshipRoutes.js";
 import userRouter from "./routes/userRouter.js";
 
 dotenv.config();
@@ -16,6 +17,7 @@ app.use(cors());
 
 // API routes
 app.use("/api/users", userRouter);
+app.use("/api/internships", internshipRoutes);
 
 // Test route
 app.get("/", (req, res) => {
