@@ -1,4 +1,4 @@
-import Internship from "../models/internship.js";
+import Internship from "../models/Internship.js";
 
 // 🟢 1. Create Internship
 export const createInternship = async (req, res) => {

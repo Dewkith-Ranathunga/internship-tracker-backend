@@ -1,6 +1,6 @@
 import cron from "node-cron";
-import Internship from "../models/internship.js";
-import User from "../models/user.js";
+import Internship from "../models/Internship.js";
+import User from "../models/User.js";
 import sendEmail from "./sendEmail.js";
 
 const startCronJobs = () => {
